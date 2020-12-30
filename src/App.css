@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+h1{
+  font-family:'Hanalei Fill' ;
+  font-size: 54px;
+  letter-spacing: 12px;;
+  color:  rgb(40, 212, 169);
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

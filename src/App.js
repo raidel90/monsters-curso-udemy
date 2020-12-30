@@ -25,6 +25,8 @@ componentDidMount(){
 
 }
 
+handleChange = e => (this.setState({searchField: e.target.value}));
+
   render(){
 
     const {monsters, searchField}=this.state;
@@ -34,7 +36,9 @@ componentDidMount(){
 
         <div className="App">
           
-          <SearchBox placeholder='Buscando monstruos...' handleChange={e => (this.setState({searchField: e.target.value}))} />
+          <h1>Monstruos de React</h1>
+          
+          <SearchBox placeholder='Buscando monstruos...' handleChange={this.handleChange} />
 
           <CardList monsters={filteredMonsters} />
       
